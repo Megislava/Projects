@@ -1,6 +1,5 @@
 from PIL import Image
 
-#I am sorry doing my homework the bad way - completelly using PIL
 #1. scaling image using particulat pixels (newSizeXY), don't keep aspect ratio
 def scaleImage(inputFile, outputFile, newSizeX, newSizeY):
     image = Image.open(inputFile)
@@ -39,7 +38,7 @@ def removeBlue(inputFile, outputFile):
             newim[x, y] = r, g, 0
     image.save(outputFile)
 
-#3. function for multiply colors from RGB, but there is a problem with float (please just integer)
+#3. function for multiply colors from RGB
 def multiplyColors(inputFile, outputFile, redCoef, greenCoef, blueCoef):
     image = Image.open(inputFile)
     newim = image.load()
@@ -50,7 +49,6 @@ def multiplyColors(inputFile, outputFile, redCoef, greenCoef, blueCoef):
             newim[x, y] = r * redCoef, g * greenCoef, b * blueCoef
     image.save(outputFile)
 
-#4. i use another part of PIL library (againg feeling sadness and disability)
 from PIL import ImageOps
 def invertColors(inputFile, outputFile):
     image = Image.open(inputFile)
@@ -95,7 +93,3 @@ def demo(inputFile):
     addWhiteBorder(inputFile , "out8.png", 10, "white")
     drawCircle(inputFile , "out9.png", "red")
     writeSent(inputFile , "out10.png", "Just a message", "blue")
-
-demo("moonm.jpg")
-#it's really simple but I like it ;) and I really have fun thank you :)
-#and I don't expect that I will have full-point homework
