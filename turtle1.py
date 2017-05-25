@@ -26,8 +26,7 @@ def triangle (n):
 triangle(4)
     
 
-'''3. Import z turtlovské knihovny všechno, fce polygon kde v argumentu je n značka pro vrcholy
-n-úhelníku a size značka pro velikost hrany n-úhelníku v pixelech'''
+'''3. Fce polygon kde v argumentu je n značka pro vrcholy n-úhelníku a size značka pro velikost hrany n-úhelníku v pixelech'''
 
 from turtle import *
 
@@ -39,8 +38,7 @@ def polygon(n, size):
 polygon (9, 100)
 
 
-'''4. Popis prográmku: Fce arrow kde v argumentu se udává
-opakování a výška trojuhelníku/počet hvězdiček v posledním řádku'''
+'''4. Fce arrow kde v argumentu se udává opakování a výška trojuhelníku/počet hvězdiček v posledním řádku'''
 
 def arrow(high, repetitions):
     for i in range (repetitions):
