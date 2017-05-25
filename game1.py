@@ -59,10 +59,4 @@ def statistics(count, maxLength):
 print(statistics(10, 40))
 
 
-'''
-prumer poctu tahu se zvyšuje v závislosti na délce pole, nepodařilo se mi
-vytisknout poslední fci a tak je to jenom podle druhé když jsem nechala
-vzrůstat délku pole
-'''
-
 
